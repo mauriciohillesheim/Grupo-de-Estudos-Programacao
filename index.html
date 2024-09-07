@@ -22,12 +22,12 @@
         <a href="https://discord.gg/EehcfqRxn3" class="join-now">Junte-se ao nosso grupo agora!</a>
 
         <!-- Botão de controle de áudio -->
-        <div class="audio-controls">
-            <button onclick="document.getElementById('backgroundAudio').play()">Reproduzir Áudio</button>
+         <div class="audio-controls">
+            <button id="audioButton" onclick="toggleAudio()">Reproduzir Áudio</button>
         </div>
     </div>
 
-    <audio id="backgroundAudio" loop>
+    <audio id="backgroundAudio" loop muted>
         <source src="./audio/Neodämmerung.mp3" type="audio/mpeg">
         Seu navegador não suporta a reprodução de áudio.
     </audio>
