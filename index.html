@@ -32,21 +32,19 @@
         Seu navegador não suporta a reprodução de áudio.
     </audio>
 
-    <!-- <script>
+    <script>
         function toggleAudio() {
             var audio = document.getElementById('backgroundAudio');
             var button = document.getElementById('audioButton');
-            if (audio.muted) {
-                audio.muted = false;
+            if (audio.paused) {
                 audio.play();
                 button.textContent = 'Pausar Áudio';
             } else {
-                audio.muted = true;
                 audio.pause();
                 button.textContent = 'Reproduzir Áudio';
             }
         }
-    </script> -->
+    </script>
 
 </body>
 </html>
