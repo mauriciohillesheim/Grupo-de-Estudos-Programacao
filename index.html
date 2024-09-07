@@ -20,16 +20,30 @@
         <p class="subtext">Aprenda, ensine, programe!</p>
 
         <a href="https://discord.gg/EehcfqRxn3" class="join-now">Junte-se ao nosso grupo agora!</a>
+
+        <!-- Botão de controle de áudio -->
+        <div class="audio-controls">
+            <button id="audioButton" onclick="toggleAudio()">Reproduzir Áudio</button>
+        </div>
     </div>
 
-    <button onclick="document.getElementById('backgroundAudio').play()">Reproduzir Áudio</button>
+    <audio id="backgroundAudio" loop muted>
+        <source src="audio/Neodämmerung.mp3" type="audio/mpeg">
+        Seu navegador não suporta a reprodução de áudio.
+    </audio>
 
-<audio id="backgroundAudio" loop>
-    <source src="audio/Neodämmerung.mp3" type="audio/mpeg">
-    Seu navegador não suporta a reprodução de áudio.
-</audio>
-
-
-    <script src="script.js"></script>
+    <script>
+        function toggleAudio() {
+            var audio = document.getElementById('backgroundAudio');
+            var button = document.getElementById('audioButton');
+            if (audio.paused) {
+                audio.play();
+                button.textContent = 'Pausar Áudio';
+            } else {
+                audio.pause();
+                button.textContent = 'Reproduzir Áudio';
+            }
+        }
+    </script>
 </body>
 </html>
