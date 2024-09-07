@@ -57,6 +57,8 @@ h1 {
 
 .icon {
     margin: 20px;
+    width: 50%;
+    height: 50%;
 }
 
 .glitch {
