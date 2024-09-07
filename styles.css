@@ -42,8 +42,6 @@ body {
 .container {
     position: relative;
     z-index: 1;
-    max-width: 90%;
-    margin: 0 auto;
 }
 
 h1 {
@@ -57,9 +55,8 @@ h1 {
     color: #00ffcc;
 }
 
-.icon img {
-    max-width: 100px; /* Define um tamanho máximo para a imagem do ícone */
-    height: auto; /* Mantém a proporção da imagem */
+.icon {
+    margin: 20px;
 }
 
 .glitch {
@@ -129,29 +126,4 @@ h1 {
 .audio-controls button:hover {
     background-color: #00cc00;
     transform: scale(1.1);
-}
-
-
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2rem;
-    }
-
-    .description, .subtext {
-        font-size: 1rem;
-    }
-
-    .icon img {
-        max-width: 80px; /* Ajusta o tamanho máximo para telas menores */
-    }
-
-    .join-now {
-        font-size: 1rem;
-        padding: 8px 16px;
-    }
-
-    .audio-controls button {
-        font-size: 0.9rem;
-        padding: 8px 16px;
-    }
 }
