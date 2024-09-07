@@ -23,7 +23,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('https://wallpapercave.com/wp/wp2726672.jpg'); /* Substitua pelo URL da sua imagem */
+    background-image: url('https://wallpapercave.com/wp/wp2726672.jpg');
     background-size: cover;
     background-position: center;
     opacity: 0;
@@ -31,7 +31,7 @@ body {
 }
 
 @keyframes blink {
-    0%, 100% {
+    0%, 50% {
         opacity: 0;
     }
     25%, 75% {
