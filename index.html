@@ -5,17 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grupo de Estudos de Programação</title>
     <link rel="stylesheet" href="styles.css">
-
-    <!-- Meta tags para Open Graph (miniatura ao compartilhar link) -->
-    <meta property="og:title" content="Venha fazer parte do nosso grupo de estudos de programação!">
-    <meta property="og:description" content="Quer aprender a programar, compartilhar conhecimento ou discutir projetos? Junte-se ao nosso grupo de estudos de programação no Discord!">
-    <meta property="og:image" content="https://wallpapercave.com/wp/wp2726672.jpg"> <!-- Substitua pelo URL da sua imagem -->
-    <meta property="og:url" content="https://exemplo.com"> <!-- Substitua pelo URL do seu site -->
-
-    <!-- Meta tag adicional para o Twitter (opcional) -->
-    <meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
+    <div class="background"></div>
     <div class="container">
         <h1>Venha fazer parte do nosso grupo de estudos de programação!</h1>
         <p class="description">Quer aprender a programar, compartilhar conhecimento ou discutir projetos? Junte-se ao nosso grupo de estudos de programação no Discord!</p>
@@ -30,12 +22,11 @@
         <a href="https://discord.gg/EehcfqRxn3" class="join-now">Junte-se ao nosso grupo agora!</a>
     </div>
 
-    <button onclick="document.getElementById('backgroundAudio').play()">Reproduzir Áudio</button>
+    <audio autoplay loop muted>
+        <source src="audio/Neodämmerung.mp3" type="audio/mpeg">
+        Seu navegador não suporta a reprodução de áudio.
+    </audio>
 
-<audio id="backgroundAudio" loop>
-    <source src="audio/Neodämmerung.mp3" type="audio/mpeg">
-    Seu navegador não suporta a reprodução de áudio.
-</audio>
-
+    <script src="script.js"></script>
 </body>
 </html>
