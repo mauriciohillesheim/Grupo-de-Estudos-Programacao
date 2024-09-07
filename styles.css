@@ -27,7 +27,7 @@ body {
     background-size: cover;
     background-position: center;
     opacity: 0;
-    animation: blink 2s infinite;
+    animation: blink 0.5s infinite;
 }
 
 @keyframes blink {
